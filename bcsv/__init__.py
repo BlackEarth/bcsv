@@ -16,7 +16,7 @@ def csv_to_records(fn, encoding='UTF-8', delimiter=',', quote='"', headers=True,
         record = {}
         for i in range(len(values)):
             value = values[i]
-            if omit_empty = False or value not in ['', None]:
+            if omit_empty == False or value not in ['', None]:
                 if i < len(keys):
                     key = keys[i]
                 else:
